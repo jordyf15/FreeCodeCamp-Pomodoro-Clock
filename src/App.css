@@ -1,0 +1,105 @@
+@font-face {font-family: "digital";
+  src: url("//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.eot"); /* IE9*/
+  src: url("//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.woff2") format("woff2"), /* chrome firefox */
+  url("//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.woff") format("woff"), /* chrome firefox */
+  url("//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+  url("//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.svg#DS-Digital") format("svg"); /* iOS 4.1- */
+}
+body{
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+  background-color: #1E555C;
+  font-family: Righteous;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+  color: #00264d;
+  text-align: center;
+}
+button{
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#setting-container{
+  display: flex;
+  justify-content: space-around;
+}
+.increment-decrement{
+  display: flex;
+  justify-content: center;
+}
+#title{
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#clock{
+  font-size: 30px;
+}
+#time-container{
+  border-radius: 50px;
+  border: 7px solid #13353a;
+  margin: 20px auto 10px auto;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#timer-label{
+  margin-top: 25px;
+}
+#time-left{
+  font-family: DS-Digital;
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+#timer-buttons{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+#information{
+  margin-top: 20px;
+  font-family: Share Tech Mono;
+  text-align: center;
+  color: #a50d0d;
+}
+@media screen and (max-width: 515px){
+  #setting-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #break-label{
+    text-align: center;
+  }
+  #session-label{
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px){
+  #clock{
+    font-size: 25px;
+  }
+  #title{
+    font-size: 40px;
+  }
+  #time-left{
+    font-size: 70px;
+  }
+  #information{
+    font-size: 12px;
+  }
+  .fa{
+    font-size: 20px;
+  }
+}
